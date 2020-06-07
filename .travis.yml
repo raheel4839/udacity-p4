@@ -21,6 +21,10 @@ install:
   - docker-compose -f udacity-c3-deployment/docker/docker-compose-build.yaml build --parallel 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker tag raheel4839/reverse-proxy raheel4839/reverse-proxy
+  - docker tag raheel4839/udacity-c3-frontend raheel4839/udacity-c3-frontend
+  - docker tag raheel4839/udacity-c3-restapi-feed raheel4839/udacity-c3-restapi-feed
+  - docker tag raheel4839/udacity-c3-restapi-user raheel4839/udacity-c3-restapi-user
   - docker push raheel4839/reverse-proxy
   - docker push raheel4839/udacity-c3-frontend
   - docker push raheel4839/udacity-c3-restapi-user
