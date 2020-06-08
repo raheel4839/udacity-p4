@@ -3,6 +3,7 @@ import { config } from './config/config';
 
 
 const c = config.dev;
+console.log("################### set_env.sh values (feed/src/sequelize.ts): ", c)
 
 // Instantiate new Sequelize instance!
 export const sequelize = new Sequelize({

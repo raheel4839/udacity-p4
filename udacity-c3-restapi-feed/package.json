@@ -1,5 +1,5 @@
 {
-  "name": "api-feed",
+  "name": "udacity-c2-restapi",
   "version": "1.0.0",
   "description": "",
   "main": "src/server.js",
@@ -14,9 +14,6 @@
   },
   "keywords": [],
   "author": "Gabriel Ruttner",
-  "contributors": [
-    "Steve Carrupt"
-  ],
   "license": "ISC",
   "dependencies": {
     "@types/bcrypt": "^3.0.0",
@@ -24,12 +21,13 @@
     "aws-sdk": "^2.429.0",
     "bcrypt": "^3.0.8",
     "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
     "email-validator": "^2.0.4",
     "express": "^4.16.4",
     "jsonwebtoken": "^8.5.1",
     "pg": "^7.9.0",
     "reflect-metadata": "^0.1.13",
-    "sequelize": "^5.21.12",
+    "sequelize": "^5.21.8",
     "sequelize-typescript": "^0.6.9"
   },
   "devDependencies": {
@@ -40,7 +38,7 @@
     "@types/validator": "^10.9.0",
     "chai": "^4.2.0",
     "chai-http": "^4.2.1",
-    "mocha": "^7.2.0",
+    "mocha": "^7.1.2",
     "ts-node-dev": "^1.0.0-pre.32",
     "tslint": "^5.14.0",
     "typescript": "^3.3.4000"
